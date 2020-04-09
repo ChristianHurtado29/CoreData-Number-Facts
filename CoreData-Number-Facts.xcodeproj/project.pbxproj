@@ -14,11 +14,13 @@
 		1391A673243E378B0005557F /* CoreData_Number_Facts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1391A671243E378B0005557F /* CoreData_Number_Facts.xcdatamodeld */; };
 		1391A675243E378E0005557F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1391A674243E378E0005557F /* Assets.xcassets */; };
 		1391A678243E378E0005557F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1391A676243E378E0005557F /* LaunchScreen.storyboard */; };
-		1391A683243E43720005557F /* LocalUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391A682243E43720005557F /* LocalUser.swift */; };
-		1391A685243E437A0005557F /* LocalPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391A684243E437A0005557F /* LocalPost.swift */; };
 		1391A687243E43990005557F /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391A686243E43990005557F /* CreatePostViewController.swift */; };
 		1391A689243E43AF0005557F /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391A688243E43AF0005557F /* CreateUserViewController.swift */; };
 		1391A68B243E43BD0005557F /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1391A68A243E43BD0005557F /* UsersViewController.swift */; };
+		13FA12B8243F753E00E5C470 /* Post+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA12B4243F753E00E5C470 /* Post+CoreDataClass.swift */; };
+		13FA12BA243F753E00E5C470 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA12B6243F753E00E5C470 /* User+CoreDataClass.swift */; };
+		13FA12D6243F78B300E5C470 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA12D4243F78B300E5C470 /* User+CoreDataProperties.swift */; };
+		13FA12D7243F78B300E5C470 /* Post+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA12D5243F78B300E5C470 /* Post+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +33,13 @@
 		1391A674243E378E0005557F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1391A677243E378E0005557F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1391A679243E378E0005557F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1391A682243E43720005557F /* LocalUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalUser.swift; sourceTree = "<group>"; };
-		1391A684243E437A0005557F /* LocalPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPost.swift; sourceTree = "<group>"; };
 		1391A686243E43990005557F /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 		1391A688243E43AF0005557F /* CreateUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
 		1391A68A243E43BD0005557F /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		13FA12B4243F753E00E5C470 /* Post+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataClass.swift"; sourceTree = "<group>"; };
+		13FA12B6243F753E00E5C470 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		13FA12D4243F78B300E5C470 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		13FA12D5243F78B300E5C470 /* Post+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +78,6 @@
 				1391A67F243E431A0005557F /* Controllers */,
 				1391A680243E432E0005557F /* Supporting Files */,
 				1391A679243E378E0005557F /* Info.plist */,
-				1391A671243E378B0005557F /* CoreData_Number_Facts.xcdatamodeld */,
 			);
 			path = "CoreData-Number-Facts";
 			sourceTree = "<group>";
@@ -103,8 +106,11 @@
 		1391A681243E433C0005557F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1391A682243E43720005557F /* LocalUser.swift */,
-				1391A684243E437A0005557F /* LocalPost.swift */,
+				13FA12D4243F78B300E5C470 /* User+CoreDataProperties.swift */,
+				13FA12D5243F78B300E5C470 /* Post+CoreDataProperties.swift */,
+				13FA12B6243F753E00E5C470 /* User+CoreDataClass.swift */,
+				13FA12B4243F753E00E5C470 /* Post+CoreDataClass.swift */,
+				1391A671243E378B0005557F /* CoreData_Number_Facts.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,13 +188,15 @@
 			files = (
 				1391A66D243E378B0005557F /* PostViewController.swift in Sources */,
 				1391A687243E43990005557F /* CreatePostViewController.swift in Sources */,
-				1391A683243E43720005557F /* LocalUser.swift in Sources */,
+				13FA12BA243F753E00E5C470 /* User+CoreDataClass.swift in Sources */,
 				1391A68B243E43BD0005557F /* UsersViewController.swift in Sources */,
 				1391A689243E43AF0005557F /* CreateUserViewController.swift in Sources */,
 				1391A673243E378B0005557F /* CoreData_Number_Facts.xcdatamodeld in Sources */,
 				1391A669243E378B0005557F /* AppDelegate.swift in Sources */,
+				13FA12D7243F78B300E5C470 /* Post+CoreDataProperties.swift in Sources */,
+				13FA12B8243F753E00E5C470 /* Post+CoreDataClass.swift in Sources */,
+				13FA12D6243F78B300E5C470 /* User+CoreDataProperties.swift in Sources */,
 				1391A66B243E378B0005557F /* SceneDelegate.swift in Sources */,
-				1391A685243E437A0005557F /* LocalPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
