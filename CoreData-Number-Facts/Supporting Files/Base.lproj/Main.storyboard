@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Users-->
         <scene sceneID="P6s-x3-Eaq">
             <objects>
-                <viewController id="twK-1g-ZQg" sceneMemberID="viewController">
+                <viewController id="twK-1g-ZQg" customClass="UsersViewController" customModule="CoreData_Number_Facts" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Vt-Cg-FLo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,13 +39,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ybc-bU-fzb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="w1r-WT-zfZ">
+                    <navigationItem key="navigationItem" title="Users" id="w1r-WT-zfZ">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="Xza-Ty-nGl">
                             <connections>
-                                <segue destination="hzC-mu-HYw" kind="presentation" id="UXV-T8-A0x"/>
+                                <segue destination="hzC-mu-HYw" kind="presentation" identifier="createUserSegue" id="UXV-T8-A0x"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="h8E-No-uWA" id="OXy-7l-Hn3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ImI-iE-44H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,6 +138,7 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="datePicker" destination="TAa-TQ-0ux" id="fEc-6Q-iEi"/>
                         <outlet property="usernameTextField" destination="cRR-67-FA9" id="c5u-7y-c0S"/>
                     </connections>
                 </tableViewController>
